@@ -6,8 +6,8 @@ Type=simple
 Restart=on-failure
 RestartSec=5
 User=root
-WorkingDirectory=/home
-ExecStart=/home/taco
+WorkingDirectory=/app
+ExecStart=/app/taco
 
 [Install]
 WantedBy=network-online.target
