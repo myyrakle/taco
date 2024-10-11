@@ -1,0 +1,13 @@
+[Unit]
+Description=simple HTTP Proxy
+
+[Service]
+Type=simple
+Restart=on-failure
+RestartSec=5
+User=root
+WorkingDirectory=/home
+ExecStart=/home/taco
+
+[Install]
+WantedBy=network-online.target
